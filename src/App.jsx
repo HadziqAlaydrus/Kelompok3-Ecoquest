@@ -13,7 +13,7 @@ import Footer from './components/Footer'
 
 function Layout({children}){
   return(
-    <div>
+    <div className='relative overflow-x-hidden'>
     <Navigationmenu/>
     {children}
     <Footer/>

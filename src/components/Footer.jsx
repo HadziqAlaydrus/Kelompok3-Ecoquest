@@ -66,6 +66,11 @@ function Footer() {
           Copyright © <span id="get-current-year">2021</span><a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank"> EcoQuest </a>
           <a href="https://www.creative-tim.com?ref=njs-profile" class="text-blueGray-500 hover:text-blueGray-800">Creative Tim</a>.
         </div>
+
+        <div className='items-center flex flex-row gap-4'>
+          <p>test</p>
+          <div className='w-full border-t-2 border-red-300 mt-1'></div>
+        </div>
       </div>
     </div>
   </div>
