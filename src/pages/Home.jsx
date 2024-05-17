@@ -25,6 +25,7 @@ function Home() {
           <img src={image2} alt="" />
       <p>Hello!</p>
       <p>Hello! 3</p>
+      <p>Hello! 2</p>
         </div>
       </div>
   </div>
