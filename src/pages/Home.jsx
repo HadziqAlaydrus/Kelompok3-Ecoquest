@@ -23,7 +23,7 @@ function Home() {
       </div>
         <div class="flex items-end justify-end">
           <img src={image2} alt="" />
-      
+      <p>Hello!</p>
         </div>
       </div>
   </div>
