@@ -22,8 +22,8 @@ const navigate = useNavigate()
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
     </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-semibold flex flex-col p-4 md:p-0 mt-4 mr-36 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-green-700 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+    <div class="hidden w-full md:block md:w-auto bg-transparent " id="navbar-default">
+      <ul class="font-semibold flex flex-col p-4 md:p-0 mt-4 mr-36 border border-gray-100 rounded-lg bg-transparant md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparant dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
           <a href="/" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 dark:text-white md:hover:text-black" aria-current="page">Home</a>
         </li>
