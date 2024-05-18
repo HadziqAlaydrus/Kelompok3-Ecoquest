@@ -12,8 +12,8 @@ function About() {
           </h2>
         </div>
         <div>
-          <h1 className="text-white pt-52 pr-20">What Is Eco Quest?</h1>
-          <h3 className="text-white  pr-20">
+          <h1 className="text-white pt-32 pr-20 text-7xl">What Is EcoQuest?</h1>
+          <h3 className="text-white pt-5 pr-20">
             Website pembayaran sampah dengan fitur memberikan tugas sesuai
             permintaan klien dan fitur pengambilan sampah sesuai permintaan
             dapat menjadi alat yang sangat berguna dalam upaya mengelola limbah
