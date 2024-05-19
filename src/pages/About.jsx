@@ -1,14 +1,15 @@
+import OurTeamCard from "@/components/OurTeamCard";
 import React from "react";
 import ablogo from "../assets/about.png";
 
 function About() {
   return (
-    <div className="max-w-screen p-14 bg-gradient-to-br from-[#079D1D] to-[#3A19BB] pt-36">
+    <div className="max-w-screen p-14 bg-gradient-to-tl from-cyan-800 via-teal-500 to-lime-500 pt-36">
       <div className="flex text-justify justify-between gap-8">
-        <div className="bg-white flex flex-col justify-between gap-y-12 px-10 py-10 border border-red-300 rounded-3xl text-center">
+        <div className="bg-white flex flex-col justify-between gap-y-16 px-32 py-12 border border-red-300 rounded-3xl text-center">
           <img src={ablogo} alt="" />
-          <h2 className="mt-5">
-            Environmental <br></br>Awareness <br /> for The Future
+          <h2 className="mt-5 mx-auto text-justify">
+            Environmental <br></br>Awareness  for<br /> The Future
           </h2>
         </div>
         <div>
@@ -22,6 +23,7 @@ function About() {
           </h3>
         </div>
       </div>
+      <OurTeamCard/>
     </div>
   );
 }

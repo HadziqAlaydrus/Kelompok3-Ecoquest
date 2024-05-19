@@ -5,11 +5,12 @@ import Image from "react";
 
 function Home() {
   return (
-    <div class="max-w-screen p-14 bg-gradient-to-br from-[#079D1D] to-[#3A19BB] pt-36">
+    <div class=" max-w-screen p-14 bg-gradient-to-tl from-cyan-800 via-teal-500 to-lime-500 pt-36">
+      <div class='bg-black bg-opacity-20'></div>
       <div class="grid grid-cols-2">
-        <div class="mt-3 test-justify">
+        <div class="test-justify">
           <a href="/">
-            <h1 class="mb-2 text-8xl font-bold tracking-tight text-white dark:text-white pt-36">
+            <h1 class="mb-2 text-8xl font-bold tracking-tight text-white dark:text-white pt-24">
               Dari Sampah <br /> Jadi Cuan
             </h1>
             <p class="mb-6 font-normal text-white dark:text-gray-400 text-justify">
@@ -22,7 +23,7 @@ function Home() {
           </a>
           <a
             href="/login"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-white rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-white dark:bg-white dark:hover:bg-white dark:focus:ring-white"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-white rounded-lg hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-white dark:bg-white dark:hover:bg-white dark:focus:ring-white"
           >
             Daftar Sekarang
             <svg
