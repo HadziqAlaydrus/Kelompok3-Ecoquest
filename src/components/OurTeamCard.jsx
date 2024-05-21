@@ -51,8 +51,8 @@ const team = [
     name:"Raihan Aji Putra Darmawan",
     role:"Member",
     github: "",
-    linkedin: "",
-    instagram:"",
+    linkedin: "http://linkedin.com/in/raihanajip-darmawan/",
+    instagram:"https://www.instagram.com/hi_banghan/",
 
   },
   {
@@ -85,7 +85,7 @@ const OurTeamCard = () => {
 
   return (
     <section className=' bg-transparant h-full'>
-      <h1 className='text-white font-bold text-[30px] text-center py-36'>
+      <h1 className='text-white font-bold text-[30px] text-center py-36 mt-10'>
         Our Team
       </h1>
       <div className='grid md:grid-cols-2 xl:grid-cols-4  justify-center items-center  py-24='>
