@@ -2,6 +2,10 @@ import React from "react";
 import react, { useEffect } from "react";
 import logo from "../assets/logo.jpeg";
 import hadziq from "../assets/hadziq2.jpg";
+import suci from "../assets/Suci.jpg";
+import anang from "../assets/Anang_Arif_Hibaturrahman.jpg";
+import rizieq from "../assets/Rizieq.png";
+import raihan from "../assets/raihan aji.jpg";
 import { FaGithubAlt } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill, RiLandscapeFill } from "react-icons/ri";
@@ -10,7 +14,7 @@ import "aos/dist/aos.css";
 
 const team = [
   {
-    img: hadziq,
+    img: suci,
     name: "Suci Fitrianti",
     role: "Leader",
     github: "https://github.com/Sucifitrianti",
@@ -26,7 +30,7 @@ const team = [
     instagram: "https://www.instagram.com/hadziqalaydrus/",
   },
   {
-    img: hadziq,
+    img: anang,
     name: "Anang Arif Hibaturrahman",
     role: "Member",
     github: "https://github.com/anangarif09",
@@ -35,7 +39,7 @@ const team = [
       "https://www.instagram.com/anangarif_h?igsh=MXBrN3hwY2F4OGgzcw==",
   },
   {
-    img: hadziq,
+    img: rizieq,
     name: "Muhammad Chair Rizieq",
     role: "Member",
     github: "",
@@ -43,7 +47,7 @@ const team = [
     instagram: "https://www.instagram.com/rziieqm_",
   },
   {
-    img: hadziq,
+    img: raihan,
     name: "Raihan Aji Putra Darmawan",
     role: "Member",
     github: "",
