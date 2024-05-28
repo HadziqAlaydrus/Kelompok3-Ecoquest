@@ -44,7 +44,7 @@ function Home() {
           </a>
         </div>
         <div class="flex items-end justify-end">
-          <img src={image2} alt="" />
+          <img src={image2} alt="" className="-mr-14"/>
         </div>
       </div>
     </div>

@@ -4,13 +4,10 @@ import ablogo from "../assets/about.png";
 
 function About() {
   return (
-    <div className="max-w-screen p-14 bg-gradient-to-tl from-cyan-800 via-teal-500 to-lime-500 pt-60">
+    <div className="max-w-screen p-14 bg-gradient-to-tl from-cyan-800 via-teal-500 to-lime-500 pt-20">
       <div className="flex text-justify justify-between gap-8">
-        <div className="bg-white flex flex-col justify-between gap-y-16 px-48 py-44 shadow-2xl rounded-3xl text-center">
-          <img src={ablogo} alt=""  />
-          <h2 className="mt-5 mx-auto text-justify">
-            Environmental <br></br>Awareness  for<br /> The Future
-          </h2>
+        <div className=" flex flex-col justify-between gap-y-16 px-48 py-44 text-center">
+          <img src={ablogo} alt="" className="w-[3000px]"  />
         </div>
         <div>
           <h1 className="text-white pt-36 pr-20 text-7xl">What Is EcoQuest?</h1>
