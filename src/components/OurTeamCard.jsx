@@ -4,8 +4,10 @@ import logo from "../assets/logo.jpeg";
 import hadziq from "../assets/hadziq2.jpg";
 import suci from "../assets/Suci.jpg";
 import anang from "../assets/Anang_Arif_Hibaturrahman.jpg";
-import rizieq from "../assets/Rizieq.png";
+import rizieq from "../assets/rizieq.jpg"
 import raihan from "../assets/raihan aji.jpg";
+import ibnu from "../assets/Ibnu Adeng Kurnia.jpg";
+import novian from "../assets/Nofian Pratama.jpg";
 import { FaGithubAlt } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill, RiLandscapeFill } from "react-icons/ri";
@@ -14,12 +16,21 @@ import "aos/dist/aos.css";
 
 const team = [
   {
-    img: suci,
-    name: "Suci Fitrianti",
+    img: anang,
+    name: "Anang Arif Hibaturrahman",
     role: "Leader",
-    github: "https://github.com/Sucifitrianti",
-    linkedin: "https://www.linkedin.com/in/suci-fitrianti-66b6272bb",
-    instagram: "https://www.instagram.com/sciftrianti02?igsh=aWU4M3N6OXg3Nnh6",
+    github: "https://github.com/anangarif09",
+    linkedin: "http://www.linkedin.com/in/anang-arif-hibaturrahman-b468931a6",
+    instagram:
+      "https://www.instagram.com/anangarif_h?igsh=MXBrN3hwY2F4OGgzcw==",
+  },
+  {
+    img: raihan,
+    name: "Raihan Aji Putra Darmawan",
+    role: "Co-Leader",
+    github: "",
+    linkedin: "http://linkedin.com/in/raihanajip-darmawan/",
+    instagram: "https://www.instagram.com/hi_banghan/",
   },
   {
     img: hadziq,
@@ -30,15 +41,6 @@ const team = [
     instagram: "https://www.instagram.com/hadziqalaydrus/",
   },
   {
-    img: anang,
-    name: "Anang Arif Hibaturrahman",
-    role: "Member",
-    github: "https://github.com/anangarif09",
-    linkedin: "http://www.linkedin.com/in/anang-arif-hibaturrahman-b468931a6",
-    instagram:
-      "https://www.instagram.com/anangarif_h?igsh=MXBrN3hwY2F4OGgzcw==",
-  },
-  {
     img: rizieq,
     name: "Muhammad Chair Rizieq",
     role: "Member",
@@ -47,15 +49,15 @@ const team = [
     instagram: "https://www.instagram.com/rziieqm_",
   },
   {
-    img: raihan,
-    name: "Raihan Aji Putra Darmawan",
+    img:suci,
+    name: "Suci Fitrianti",
     role: "Member",
-    github: "",
-    linkedin: "",
-    instagram: "",
+    github: "https://github.com/Sucifitrianti",
+    linkedin: "https://www.linkedin.com/in/suci-fitrianti-66b6272bb",
+    instagram: "https://www.instagram.com/sciftrianti02?igsh=aWU4M3N6OXg3Nnh6",
   },
   {
-    img: hadziq,
+    img: ibnu,
     name: "Ibnu Adeng Kurnia",
     role: "Member",
     github: "https://github.com/ibnuadeng03",
@@ -63,7 +65,7 @@ const team = [
     instagram: "https://www.instagram.com/ibnuadeng0303/",
   },
   {
-    img: hadziq,
+    img: novian,
     name: "Novian Pratama",
     role: "Member",
     github: "",
@@ -168,7 +170,7 @@ const OurTeamCard = () => {
                   >
                     <FaGithubAlt
                       fill="#97EB63"
-                      className="w-5 h-5 hover:scale-110 transition-all cursor-pointer"
+                      className="w-5 h-5 hover:scale-200 transition-all cursor-pointer"
                     />
                   </a>
                   <a
@@ -178,7 +180,7 @@ const OurTeamCard = () => {
                   >
                     <FaLinkedin
                       fill="#97EB63"
-                      className="w-5 h-5 hover:scale-110 transition-all cursor-pointer"
+                      className="w-5 h-5 hover:scale-200 transition-all cursor-pointer"
                     />
                   </a>
                   <a
@@ -188,7 +190,7 @@ const OurTeamCard = () => {
                   >
                     <RiInstagramFill
                       fill="#97EB63"
-                      className="w-5 h-5 hover:scale-110 transition-all cursor-pointer"
+                      className="w-5 h-5 hover:scale-200 transition-all cursor-pointer"
                     />
                   </a>
                 </div>

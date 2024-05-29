@@ -2,6 +2,7 @@ import React from "react";
 import image2 from "../assets/home.png";
 import circle from "../assets/circle.svg";
 import Image from "react";
+import Faq from "@/components/Faq";
 
 function Home() {
   return (
@@ -22,10 +23,10 @@ function Home() {
             </p>
           </a>
           <a
-            href="/login"
+            href="/request"
             class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-white rounded-lg hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-white dark:bg-white dark:hover:bg-white dark:focus:ring-white"
           >
-            Daftar Sekarang
+            Request Pengambilan
             <svg
               class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
               aria-hidden="true"
@@ -43,11 +44,15 @@ function Home() {
             </svg>
           </a>
         </div>
-        <div class="flex items-end justify-end">
-          <img src={image2} alt="" className="-mr-14"/>
+        <div class="flex items-end justify-end -mr-20">
+          <img src={image2} alt="" />
         </div>
       </div>
+    
+        <Faq/>
+      
     </div>
+    
   );
 }
 
