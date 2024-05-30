@@ -1,4 +1,6 @@
 import React from 'react'
+import { RiInstagramFill, RiLandscapeFill } from "react-icons/ri";
+import { FaGithubAlt } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -12,10 +14,27 @@ function Footer() {
           Find us on any of these platforms, we respond 1-2 business days.
         </h5>
         <div class="mt-6 lg:mb-0 mb-6">
-          <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+        
+          <button class="bg-gray-400 text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <RiInstagramFill
+                  fill="#97EB63"
+                  className="w-5 h-5 hover:scale-150 mx-auto transition-all cursor-pointer"
+                />
+            <i class="fab fa-twitter"></i></button><button class="bg-gray-400 text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <FaGithubAlt
+                  fill="#97EB63"
+                  className="w-5 h-5 hover:scale-150 mx-auto transition-all cursor-pointer"
+                />
+            <i class="fab fa-facebook-square"></i></button><button class="bg-gray-400 text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+              <RiInstagramFill
+                  fill="#97EB63"
+                  className="w-5 h-5 hover:scale-150 mx-auto transition-all cursor-pointer"
+                />
+            <i class="fab fa-dribbble"></i></button><button class="bg-gray-400 text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+              <RiInstagramFill
+                  fill="#97EB63"
+                  className="w-5 h-5 hover:scale-150 mx-auto transition-all cursor-pointer"
+                />
             <i class="fab fa-github"></i>
           </button>
         </div>
@@ -26,16 +45,17 @@ function Footer() {
             <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
             <ul class="list-unstyled">
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/about">About Us</a>
+                <a class="text-blueGray-600 hover:scale-110 transition-all cursor-pointer text-blueGray-800 font-semibold block pb-2 text-sm" href="/about">About Us</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/contact">Contact</a>
+                <a class="text-blueGray-600 hover:scale-110 transition-all cursor-pointer text-blueGray-800 font-semibold block pb-2 text-sm" href="/contact">Contact</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Github</a>
+                <a class="text-blueGray-600 hover:scale-110 transition-all cursor-pointer text-blueGray-800 font-semibold block pb-2 text-sm " href="https://github.com/HadziqAlaydrus/Kelompok3-Ecoquest" target="_blank"
+                rel="noopener noreferrer" >Github</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Free Products</a>
+                <a class="text-blueGray-600 hover:scale-110 transition-all cursor-pointer text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Free Products</a>
               </li>
             </ul>
           </div>
@@ -43,16 +63,16 @@ function Footer() {
             <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Our Services</span>
             <ul class="list-unstyled">
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT License</a>
+                <a class="text-blueGray-600 hover:scale-110 transition-all cursor-pointer text-blueGray-800 font-semibold block pb-2 text-sm" href="/">MIT License</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+                <a class="text-blueGray-600 hover:scale-110 transition-all cursor-pointer text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Terms &amp; Conditions</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
+                <a class="text-blueGray-600 hover:scale-110 transition-all cursor-pointer text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Privacy Policy</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+                <a class="text-blueGray-600 hover:scale-110 transition-all cursor-pointer text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Contact Us</a>
               </li>
             </ul>
           </div>
