@@ -3,12 +3,12 @@ import React from "react";
 const CardForm = () => {
   return (
     <section className="max-w-screen p-14 bg-gradient-to-tl from-cyan-800 via-teal-500 to-lime-500 pt-36 ">
-      <div className="bg-gray-100 h-screen rounded-[50px] p-10 ">
-        <h1 className="font-bold text-3xl text-center mb-20">
+      <div className="bg-gray-100 h-fit rounded-[50px] p-10 ">
+        <h1 className="font-bold text-5xl bg-gradient-to-tl from-cyan-800 via-teal-500 to-lime-500 text-center text-transparent bg-clip-text mb-20">
           Request Pick Up
         </h1>
         <div className="grid grid-cols-2 ml-3 ">
-          <div className="flex">
+          <div className="flex ml-40">
             <div className=" flex flex-col gap-5">
               <label className=" text-black font-bold text-[20px]">
                 Nama Lengkap
@@ -41,7 +41,7 @@ const CardForm = () => {
 
           <div className="grid grid-cols-2 relative">
             <div className="flex flex-col gap-20">
-              <div className="border-l-2 pl-20">
+              <div className="border-l-2 pl-10  flex flex-col gap-5">
                 <label className=" text-black font-bold text-[20px]">
                   Tanggal Pengambilan
                 </label>
