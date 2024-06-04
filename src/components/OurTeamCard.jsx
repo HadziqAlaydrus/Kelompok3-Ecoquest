@@ -35,31 +35,31 @@ const team = [
   {
     img: hadziq,
     name: "Abubakar Hadziq Alaydrus",
-    role: "Member",
+    role: "Developer",
     github: "https://github.com/HadziqAlaydrus",
     linkedin: "https://www.linkedin.com/in/abubakar-hadziq-alaydrus-a3b24722b/",
     instagram: "https://www.instagram.com/hadziqalaydrus/",
   },
   {
-    img: rizieq,
-    name: "Muhammad Chair Rizieq",
-    role: "Member",
-    github: "",
-    linkedin: "",
-    instagram: "https://www.instagram.com/rziieqm_",
-  },
-  {
     img:suci,
     name: "Suci Fitrianti",
-    role: "Member",
+    role: "Developer",
     github: "https://github.com/Sucifitrianti",
     linkedin: "https://www.linkedin.com/in/suci-fitrianti-66b6272bb",
     instagram: "https://www.instagram.com/sciftrianti02?igsh=aWU4M3N6OXg3Nnh6",
   },
   {
+    img: rizieq,
+    name: "Muhammad Chair Rizieq",
+    role: "UI/UX Designer",
+    github: "",
+    linkedin: "",
+    instagram: "https://www.instagram.com/rziieqm_",
+  },
+  {
     img: ibnu,
     name: "Ibnu Adeng Kurnia",
-    role: "Member",
+    role: "Product Requirement Document",
     github: "https://github.com/ibnuadeng03",
     linkedin: "http://www.linkedin.com/in/ibnu-adeng-kurnia-351648301",
     instagram: "https://www.instagram.com/ibnuadeng0303/",
@@ -67,7 +67,7 @@ const team = [
   {
     img: novian,
     name: "Novian Pratama",
-    role: "Member",
+    role: "Product development and implementation",
     github: "",
     linkedin:
       "https://www.linkedin.com/in/nofian-pratama-33827a2a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -143,7 +143,7 @@ const OurTeamCard = () => {
           </div>
         ))}
         <div className="col-span-4 flex justify-center">
-          <div className="flex justify-center gap-4 mt-5">
+          <div className="flex justify-center gap-16 mt-5">
             {team.slice(4).map((profile, index) => (
               <div
                 key={index + 4}

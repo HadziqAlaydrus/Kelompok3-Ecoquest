@@ -10,7 +10,7 @@ function About() {
           <img src={ablogo} alt="" className="w-[3000px]"  />
         </div>
         <div>
-          <h1 className="text-white pt-36 pr-20 text-7xl">What Is EcoQuest?</h1>
+          <h1 className="text-white pt-52 pr-20 text-7xl">What Is EcoQuest?</h1>
           <h3 className="text-white pt-5 pr-20 text-xl">
           EcoQuest didirikan dengan visi untuk menjadikan teknologi cloud sebagai alat utama dalam mencapai tujuan keberlanjutan. Kami memahami bahwa integrasi Environmental, Social, and Governance (ESG) ke dalam infrastruktur digital  baik untuk lingkungan sekitarnya.
           Dengan bekerja sama tim ahli yang berdedikasi dan teknologi canggih, EcoQuest  menyediakan solusi inovatif dan berkomitmen untuk membantu Anda meminimalkan jejak karbon, meningkatkan efisiensi operasional, dan mendukung praktik bisnis yang etis dan bertanggung jawab.
