@@ -2,6 +2,12 @@ import React from "react";
 import react, { useEffect } from "react";
 import logo from "../assets/logo.jpeg";
 import hadziq from "../assets/hadziq2.jpg";
+import suci from "../assets/Suci.jpg";
+import anang from "../assets/Anang_Arif_Hibaturrahman.jpg";
+import rizieq from "../assets/rizieq.jpg"
+import raihan from "../assets/raihan aji.jpg";
+import ibnu from "../assets/Ibnu Adeng Kurnia.jpg";
+import novian from "../assets/Nofian Pratama.jpg";
 import { FaGithubAlt } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill, RiLandscapeFill } from "react-icons/ri";
@@ -10,58 +16,58 @@ import "aos/dist/aos.css";
 
 const team = [
   {
-    img: hadziq,
-    name: "Suci Fitrianti",
-    role: "Leader",
-    github: "https://github.com/Sucifitrianti",
-    linkedin: "https://www.linkedin.com/in/suci-fitrianti-66b6272bb",
-    instagram: "https://www.instagram.com/sciftrianti02?igsh=aWU4M3N6OXg3Nnh6",
-  },
-  {
-    img: hadziq,
-    name: "Abubakar Hadziq Alaydrus",
-    role: "Member",
-    github: "https://github.com/HadziqAlaydrus",
-    linkedin: "https://www.linkedin.com/in/abubakar-hadziq-alaydrus-a3b24722b/",
-    instagram: "https://www.instagram.com/hadziqalaydrus/",
-  },
-  {
-    img: hadziq,
+    img: anang,
     name: "Anang Arif Hibaturrahman",
-    role: "Member",
+    role: "Leader",
     github: "https://github.com/anangarif09",
     linkedin: "http://www.linkedin.com/in/anang-arif-hibaturrahman-b468931a6",
     instagram:
       "https://www.instagram.com/anangarif_h?igsh=MXBrN3hwY2F4OGgzcw==",
   },
   {
+    img: raihan,
+    name: "Raihan Aji Putra Darmawan",
+    role: "Co-Leader",
+    github: "",
+    linkedin: "http://linkedin.com/in/raihanajip-darmawan/",
+    instagram: "https://www.instagram.com/hi_banghan/",
+  },
+  {
     img: hadziq,
+    name: "Abubakar Hadziq Alaydrus",
+    role: "Developer",
+    github: "https://github.com/HadziqAlaydrus",
+    linkedin: "https://www.linkedin.com/in/abubakar-hadziq-alaydrus-a3b24722b/",
+    instagram: "https://www.instagram.com/hadziqalaydrus/",
+  },
+  {
+    img:suci,
+    name: "Suci Fitrianti",
+    role: "Developer",
+    github: "https://github.com/Sucifitrianti",
+    linkedin: "https://www.linkedin.com/in/suci-fitrianti-66b6272bb",
+    instagram: "https://www.instagram.com/sciftrianti02?igsh=aWU4M3N6OXg3Nnh6",
+  },
+  {
+    img: rizieq,
     name: "Muhammad Chair Rizieq",
-    role: "Member",
+    role: "UI/UX Designer",
     github: "",
     linkedin: "",
     instagram: "https://www.instagram.com/rziieqm_",
   },
   {
-    img: hadziq,
-    name: "Raihan Aji Putra Darmawan",
-    role: "Member",
-    github: "",
-    linkedin: "",
-    instagram: "",
-  },
-  {
-    img: hadziq,
+    img: ibnu,
     name: "Ibnu Adeng Kurnia",
-    role: "Member",
+    role: "Product Requirement Document",
     github: "https://github.com/ibnuadeng03",
     linkedin: "http://www.linkedin.com/in/ibnu-adeng-kurnia-351648301",
     instagram: "https://www.instagram.com/ibnuadeng0303/",
   },
   {
-    img: hadziq,
+    img: novian,
     name: "Novian Pratama",
-    role: "Member",
+    role: "Product development and implementation",
     github: "",
     linkedin:
       "https://www.linkedin.com/in/nofian-pratama-33827a2a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -137,7 +143,7 @@ const OurTeamCard = () => {
           </div>
         ))}
         <div className="col-span-4 flex justify-center">
-          <div className="flex justify-center gap-4 mt-5">
+          <div className="flex justify-center gap-16 mt-5">
             {team.slice(4).map((profile, index) => (
               <div
                 key={index + 4}
@@ -164,7 +170,7 @@ const OurTeamCard = () => {
                   >
                     <FaGithubAlt
                       fill="#97EB63"
-                      className="w-5 h-5 hover:scale-110 transition-all cursor-pointer"
+                      className="w-5 h-5 hover:scale-200 transition-all cursor-pointer"
                     />
                   </a>
                   <a
@@ -174,7 +180,7 @@ const OurTeamCard = () => {
                   >
                     <FaLinkedin
                       fill="#97EB63"
-                      className="w-5 h-5 hover:scale-110 transition-all cursor-pointer"
+                      className="w-5 h-5 hover:scale-200 transition-all cursor-pointer"
                     />
                   </a>
                   <a
@@ -184,7 +190,7 @@ const OurTeamCard = () => {
                   >
                     <RiInstagramFill
                       fill="#97EB63"
-                      className="w-5 h-5 hover:scale-110 transition-all cursor-pointer"
+                      className="w-5 h-5 hover:scale-200 transition-all cursor-pointer"
                     />
                   </a>
                 </div>

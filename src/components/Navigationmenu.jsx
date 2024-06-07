@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/image 1.png";
-import sign from "../assets/Vector.png";
 import { useState } from "react";
 
 const Navigationmenu = () => {
@@ -94,15 +93,23 @@ const Navigationmenu = () => {
                   About
                 </a>
               </li>
+              <li>
+                <a
+                  href="/"
+                  class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  FAQ
+                </a>
+              </li>
             </ul>
           </div>
-          <button href="/login">
+          <button href="/request">
             {" "}
             <a
-              href="/login"
+              href="/request"
               class="font-semibold block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >
-              Sign in
+              Request
             </a>
           </button>
         </div>

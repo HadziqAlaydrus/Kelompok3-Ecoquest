@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image2 from "../assets/home.png";
 import circle from "../assets/circle.svg";
 import Image from "react";
+import Faq from "@/components/Faq";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // durasi animasi dalam milidetik
+      once: true, // animasi hanya berjalan sekali
+      easing: 'ease-in-out', // Jenis easing untuk animasi
+      delay: 100, // Penundaan sebelum animasi dimulai dalam milidetik
+    });
+  }, []);
+  
   return (
     <div class=" max-w-screen p-14 bg-gradient-to-tl from-cyan-800 via-teal-500 to-lime-500 pt-36">
-      <div class='bg-black bg-opacity-20'></div>
+      <div class="bg-black bg-opacity-20"></div>
       <div class="grid grid-cols-2">
-        <div class="test-justify">
+        <div class="text-justify" data-aos="fade-up">
           <a href="/">
             <h1 class="mb-2 text-8xl font-bold tracking-tight text-white dark:text-white pt-24">
               Dari Sampah <br /> Jadi Cuan
@@ -22,10 +34,10 @@ function Home() {
             </p>
           </a>
           <a
-            href="/login"
+            href="/request"
             class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-white rounded-lg hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-white dark:bg-white dark:hover:bg-white dark:focus:ring-white"
           >
-            Daftar Sekarang
+            Request Pengambilan
             <svg
               class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
               aria-hidden="true"
@@ -43,10 +55,12 @@ function Home() {
             </svg>
           </a>
         </div>
-        <div class="flex items-end justify-end">
-          <img src={image2} alt="" className="-mr-14"/>
+        <div class="flex items-end justify-end -mr-20">
+          <img src={image2} alt="" data-aos="fade-left" />
         </div>
       </div>
+
+      <Faq />
     </div>
   );
 }
