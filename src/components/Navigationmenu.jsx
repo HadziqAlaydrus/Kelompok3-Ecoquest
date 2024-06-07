@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/image 1.png";
-import sign from "../assets/Vector.png";
 import { useState } from "react";
 
 const Navigationmenu = () => {

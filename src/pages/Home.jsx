@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image2 from "../assets/home.png";
 import circle from "../assets/circle.svg";
 import Image from "react";
 import Faq from "@/components/Faq";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // durasi animasi dalam milidetik
+      once: true, // animasi hanya berjalan sekali
+      easing: 'ease-in-out', // Jenis easing untuk animasi
+      delay: 100, // Penundaan sebelum animasi dimulai dalam milidetik
+    });
+  }, []);
+  
   return (
     <div class=" max-w-screen p-14 bg-gradient-to-tl from-cyan-800 via-teal-500 to-lime-500 pt-36">
-      <div class='bg-black bg-opacity-20'></div>
+      <div class="bg-black bg-opacity-20"></div>
       <div class="grid grid-cols-2">
-        <div class="test-justify">
+        <div class="text-justify" data-aos="fade-up">
           <a href="/">
             <h1 class="mb-2 text-8xl font-bold tracking-tight text-white dark:text-white pt-24">
               Dari Sampah <br /> Jadi Cuan
@@ -45,14 +56,12 @@ function Home() {
           </a>
         </div>
         <div class="flex items-end justify-end -mr-20">
-          <img src={image2} alt="" />
+          <img src={image2} alt="" data-aos="fade-left" />
         </div>
       </div>
-    
-        <Faq/>
-      
+
+      <Faq />
     </div>
-    
   );
 }
 
