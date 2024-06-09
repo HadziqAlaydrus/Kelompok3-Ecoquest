@@ -31,7 +31,7 @@ const CardForm = () => {
       console.log(response.data);
       setTimeout(()=> {
         window.location.reload();
-      }, 3000);
+      }, 1000);
       
 
     }catch (error){
