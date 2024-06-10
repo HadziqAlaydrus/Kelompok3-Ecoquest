@@ -27,7 +27,7 @@ const CardForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
-      const response = await axios.post('http://localhost:3000/pickup', formData);
+      const response = await axios.post('https://backend-ecoquest.vercel.app/pickup', formData);
       console.log(response.data);
       setTimeout(()=> {
         window.location.reload();
