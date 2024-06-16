@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navigationmenu from './components/Navigationmenu'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -24,7 +21,7 @@ function Layout({children}){
 function App() {
 
   return (
-    <>
+    <section>
       <Router>
         <Routes>
           <Route path='/' element={<Layout> <Home /> </Layout>}></Route>
@@ -33,7 +30,7 @@ function App() {
           <Route path='/request' element={<Layout><RequestPickUp/></Layout>}></Route>
         </Routes>
       </Router>
-    </>
+    </section>
   )
 }
 
