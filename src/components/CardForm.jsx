@@ -51,7 +51,7 @@ const CardForm = () => {
   return (
     <section className="max-w-screen p-14 bg-gradient-to-tl from-cyan-800 via-teal-500 to-lime-500 pt-36 ">
       
-      <div className="bg-gray-100 h-fit rounded-[50px] p-10 " data-aos="fade-up">
+      <div className="bg-gray-100 h-fit rounded-[50px] p-10 text-black " data-aos="fade-up">
         <h1 className="font-bold text-5xl bg-gradient-to-tl from-cyan-800 via-teal-500 to-lime-500 text-center text-transparent bg-clip-text mb-20">
           Request Pick Up
         </h1>
@@ -67,7 +67,7 @@ const CardForm = () => {
                 name="nama"
                 value={formData.nama}
                 onChange={handleChange}
-                className="border shadow-lg border-black font-thin rounded-lg mx-auto w-80 p-1"
+                className="border shadow-lg border-black bg-white font-thin rounded-lg mx-auto w-80 p-1"
               />
 
               <label className=" text-black font-bold text-[20px]">
@@ -78,7 +78,7 @@ const CardForm = () => {
                 name="no_telp"
                 value={formData.no_telp}
                 onChange={handleChange}
-                className="border shadow-lg border-black font-thin rounded-lg mx-auto w-80 p-1"
+                className="border shadow-lg border-black bg-white font-thin rounded-lg mx-auto w-80 p-1"
               />
               <label className=" text-black font-bold text-[20px]">
                 Alamat Lengkap
@@ -88,7 +88,7 @@ const CardForm = () => {
                 name="alamat"
                 value={formData.alamat}
                 onChange={handleChange}
-                className="border shadow-lg border-black font-thin rounded-lg mx-auto w-80 p-1"
+                className="border shadow-lg border-black bg-white font-thin rounded-lg mx-auto w-80 p-1"
               />
             </div>
           </div>
@@ -104,12 +104,12 @@ const CardForm = () => {
                   name="tanggal_pengambilan"
                   value={formData.tanggal_pengambilan}
                   onChange={handleChange}
-                  className="border shadow-lg border-black font-thin rounded-lg  w-80 p-1"
+                  className="border shadow-lg bg-white border-black font-thin rounded-lg  w-80 p-1"
                 />
                 <label className=" text-black font-bold text-[20px]">
                   Waktu Pengambilan
                 </label>
-                <select className="border shadow-lg border-black font-thin rounded-lg  w-80 p-1" 
+                <select className="border shadow-lg border-black bg-white font-thin rounded-lg  w-80 p-1" 
                 name="waktu_pengambilan" 
                 value={formData.waktu_pengambilan}
                 onChange={handleChange}>
@@ -123,7 +123,7 @@ const CardForm = () => {
                 <h2 className="border rounded-lg border-black p-2 w-fit">
                   Jenis Sampah yang akan di Pick Up
                 </h2>
-                <div className="flex gap-5 mt-5">
+                <div className="flex gap-5 mt-5 ">
                   <input 
                   type="radio" 
                   name="jenis_sampah" 
@@ -149,8 +149,9 @@ const CardForm = () => {
                   name="berat_sampah"
                   value={formData.berat_sampah}
                   onChange={handleChange}
-                  className="border shadow-lg border-black font-thin rounded-lg mx-auto w-80 p-1"
+                  className="border shadow-lg border-black bg-white font-thin rounded-lg mx-auto w-80 p-1"
                 />
+              
               </div>
             </div>
 

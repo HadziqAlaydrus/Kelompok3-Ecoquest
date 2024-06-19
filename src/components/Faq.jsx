@@ -18,7 +18,7 @@ const Faq = () => {
             </p>
           </div>
         </div>
-        <div className="collapse collapse-arrow bg-white rounded-none">
+        <div className="collapse collapse-arrow bg-white rounded-sm">
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title text-xl font-bold text-gray-600">
           Bagaimana cara kerja bank sampah di EcoQuest?

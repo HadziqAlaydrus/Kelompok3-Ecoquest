@@ -6,7 +6,7 @@ import { RiFacebookFill } from "react-icons/ri";
 function Footer() {
   return (
     <div>
-      <footer class="relative bg-blueGray-200 pt-8 pb-3">
+      <footer class="relative bg-blueGray-200  pt-8 pb-3">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap text-left lg:text-left">
             <div class="w-full lg:w-6/12 px-4">
