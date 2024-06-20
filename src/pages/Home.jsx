@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import image2 from "../assets/home.png";
 import circle from "../assets/circle.svg";
-import Image from "react";
 import Faq from "@/components/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,23 +8,23 @@ import "aos/dist/aos.css";
 function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // durasi animasi dalam milidetik
-      once: true, // animasi hanya berjalan sekali
-      easing: 'ease-in-out', // Jenis easing untuk animasi
-      delay: 100, // Penundaan sebelum animasi dimulai dalam milidetik
+      duration: 1000,
+      once: true,
+      easing: 'ease-in-out',
+      delay: 100,
     });
   }, []);
   
   return (
-    <div class=" max-w-screen p-14 bg-gradient-to-tl from-cyan-800 via-teal-500 to-lime-500 pt-36">
-      <div class="bg-black bg-opacity-20"></div>
-      <div class="grid grid-cols-2">
-        <div class="text-justify" data-aos="fade-up">
+    <div className="max-w-screen p-6 sm:p-14 bg-gradient-to-tl from-cyan-800 via-teal-500 to-lime-500 pt-16 sm:pt-36">
+      <div className="bg-black bg-opacity-20"></div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="text-justify" data-aos="fade-up">
           <a href="/">
-            <h1 class="mb-2 text-8xl font-bold tracking-tight text-white dark:text-white pt-24">
+            <h1 className="mb-2 text-4xl sm:text-8xl font-bold tracking-tight text-white pt-12 sm:pt-24">
               Dari Sampah <br /> Jadi Cuan
             </h1>
-            <p class="mb-6 font-normal text-white dark:text-gray-400 text-justify">
+            <p className="mb-6 font-normal text-white text-justify">
               Website pembayaran sampah dengan fitur memberikan tugas sesuai
               permintaan klien dan fitur pengambilan sampah sesuai permintaan
               dapat menjadi alat yang sangat berguna dalam upaya mengelola
@@ -35,11 +34,11 @@ function Home() {
           </a>
           <a
             href="/request"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-white rounded-lg hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-white dark:bg-white dark:hover:bg-white dark:focus:ring-white"
+            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-white rounded-lg hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-white"
           >
             Request Pengambilan
             <svg
-              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -47,16 +46,16 @@ function Home() {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
           </a>
         </div>
-        <div class="flex items-end justify-end -mr-20">
-          <img src={image2} alt="" data-aos="fade-left" />
+        <div className="flex items-end justify-end sm:-mr-20" data-aos="fade-left">
+          <img src={image2} alt="" className="w-full h-auto" />
         </div>
       </div>
 

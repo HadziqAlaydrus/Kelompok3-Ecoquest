@@ -3,6 +3,7 @@ import axios from "axios";
 import aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import InputMask from "react-input-mask";
 
 const CardForm = () => {
   const [formData, setFormData] = useState({
@@ -16,12 +17,19 @@ const CardForm = () => {
   });
   
   const handleChange = (e) => {
-    const {name, value} = e.target;
-    
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+    const { name, value } = e.target;
+    if (name === 'no_telp') {
+      const numericValue = value.replace(/[^\d+]/g, '');
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: numericValue,
+      }));
+    } else {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: value,
+      }));
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -68,17 +76,20 @@ const CardForm = () => {
                 value={formData.nama}
                 onChange={handleChange}
                 className="border shadow-lg border-black bg-white font-thin rounded-lg mx-auto w-80 p-1"
+                placeholder="Nama"
               />
 
               <label className=" text-black font-bold text-[20px]">
                 No. Telp/HP
               </label>
               <input
-                type="text"
+                mask="+62 999-9999-9999"
+                maskChar={null}
                 name="no_telp"
                 value={formData.no_telp}
                 onChange={handleChange}
                 className="border shadow-lg border-black bg-white font-thin rounded-lg mx-auto w-80 p-1"
+                placeholder="Nomor yang dapat dihubungi"
               />
               <label className=" text-black font-bold text-[20px]">
                 Alamat Lengkap
@@ -89,6 +100,8 @@ const CardForm = () => {
                 value={formData.alamat}
                 onChange={handleChange}
                 className="border shadow-lg border-black bg-white font-thin rounded-lg mx-auto w-80 p-1"
+                placeholder="Alamat Detail"
+                
               />
             </div>
           </div>
@@ -150,6 +163,7 @@ const CardForm = () => {
                   value={formData.berat_sampah}
                   onChange={handleChange}
                   className="border shadow-lg border-black bg-white font-thin rounded-lg mx-auto w-80 p-1"
+                  placeholder="Berat Sampah (G, KG)"
                 />
               
               </div>
