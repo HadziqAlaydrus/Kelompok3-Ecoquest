@@ -77,6 +77,7 @@ const CardForm = () => {
                 onChange={handleChange}
                 className="border shadow-lg border-black bg-white font-thin rounded-lg mx-auto w-80 p-1"
                 placeholder="Nama"
+                required
               />
 
               <label className=" text-black font-bold text-[20px]">
@@ -90,6 +91,8 @@ const CardForm = () => {
                 onChange={handleChange}
                 className="border shadow-lg border-black bg-white font-thin rounded-lg mx-auto w-80 p-1"
                 placeholder="Nomor yang dapat dihubungi"
+                required
+                maxLength={13}
               />
               <label className=" text-black font-bold text-[20px]">
                 Alamat Lengkap
@@ -101,7 +104,7 @@ const CardForm = () => {
                 onChange={handleChange}
                 className="border shadow-lg border-black bg-white font-thin rounded-lg mx-auto w-80 p-1"
                 placeholder="Alamat Detail"
-                
+                required
               />
             </div>
           </div>
@@ -117,12 +120,14 @@ const CardForm = () => {
                   name="tanggal_pengambilan"
                   value={formData.tanggal_pengambilan}
                   onChange={handleChange}
-                  className="border shadow-lg bg-white border-black font-thin rounded-lg  w-80 p-1"
+                  className="border shadow-lg  border-black font-thin rounded-lg  w-80 p-1"
+                  required
                 />
                 <label className=" text-black font-bold text-[20px]">
                   Waktu Pengambilan
                 </label>
                 <select className="border shadow-lg border-black bg-white font-thin rounded-lg  w-80 p-1" 
+                required
                 name="waktu_pengambilan" 
                 value={formData.waktu_pengambilan}
                 onChange={handleChange}>
@@ -143,6 +148,7 @@ const CardForm = () => {
                   value="organik" 
                   checked={formData.jenis_sampah === 'organik'}
                   onChange={handleChange}
+                  required
                   />
                   <label>Organik</label>
                   <input type="radio" 
@@ -150,6 +156,7 @@ const CardForm = () => {
                   value="non-organik"
                   checked={formData.jenis_sampah === 'non-organik'}
                   onChange={handleChange}
+                  required
                   />
                   <label>Non - Organik</label>
                 </div>
@@ -164,6 +171,7 @@ const CardForm = () => {
                   onChange={handleChange}
                   className="border shadow-lg border-black bg-white font-thin rounded-lg mx-auto w-80 p-1"
                   placeholder="Berat Sampah (G, KG)"
+                  required
                 />
               
               </div>
