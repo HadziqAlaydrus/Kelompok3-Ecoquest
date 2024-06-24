@@ -36,7 +36,7 @@ function Home() {
             href="/request"
             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-white rounded-lg hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-white"
           >
-            Request Pengambilan
+            Request Pengambilan Sampah
             <svg
               className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
               aria-hidden="true"
